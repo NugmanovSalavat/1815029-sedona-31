@@ -7,12 +7,12 @@
   <body>
     <header>
       <nav>
+        <a href="blank.html"><img src="https://via.placeholder.com/150x100" alt="catalog"></a>          
         <ul>
           <li><a href="blank.html">Информация</a></li>
           <li><a href="blank.html">Фото и видео</a></li>
-          <li><a href="blank.html"><img src="https://via.placeholder.com/150x100" alt="catalog"></a></li>          
           <li><a href="blank.html">Карта штата</a></li>
-          <li><a href="blank.html">Гостиницы</a></li>
+          <li><a href="catalog.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
@@ -28,18 +28,15 @@
               <img src="img/background_1.png" alt="background">         
               <ul>
                       <li>
-                        <h3>Жильё</h3>
-                        <img src="img/icon-1.svg" alt="icon_1">
+                        <h4>Жильё</h4>
                         <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
                       </li>
                       <li>
-                        <h3>Еда</h3>
-                        <img src="img/icon-2.svg" alt="icon_2">
+                        <h4>Еда</h4>
                         <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                       </li>
                       <li>
-                        <h3>Сувениры</h3>
-                        <img src="img/icon-3.svg" alt="icon_3">>
+                        <h4>Сувениры</h4>
                         <p>Не только китайского, но и местного производства!</p>
                       </li>
                 </ul>
@@ -51,17 +48,17 @@
               <img src="img/background_2.png" alt="background">
             </li>
             <li>
-              <h3>Небольшая площадь</h3>
+              <h4>Небольшая площадь</h4>
               <p>-№3-</p>
               <p>Жильё  Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
             </li>
             <li>
-              <h3>Красивая дорога</h3>
+              <h4>Красивая дорога</h4>
               <p>-№4-</p>
               <p>Ехать в седону из лас-вегаса совсем не скучно!</p>
             </li>
             <li>
-              <h3>Мало туристов</h3>
+              <h4>Мало туристов</h4>
               <p>-№5-</p>
               <p>Большинство едет в гранд каньон и толпится там</p>
             </li>
@@ -70,15 +67,36 @@
           <p>Заинтересовались?</p>
           <p>Укажите предполагаемые даты поездки,  и мы покажем вам лучшие предложения гостиниц в седоне</p>
           <button type="button">Поиск гостиницы в Седоне</button>
+          <form action="https://echo.htmlacademy.ru/courses" method="post">
+              <p>
+                <label for="check-in-date">Дата заезда</label>
+                <input id="check-in-date" type="text" name="date" placeholder="24 АПРЕЛЯ 2017">
+              </p>
+              <p>
+                <label for="departure-date">Дата выезда</label>
+                <input id="departure-date" type="text" name="date" placeholder="4 ИЮЛЯ 2017">
+              </p>
+              <p>
+                <label for="old">ВЗРОСЛЫЕ</label>
+                <button type="button">-</button>
+                <input id="old" type="text" name="quantity" placeholder="2">
+                <button type="button">+</button>
+              </p>
+              <p>
+                <label for="children">ДЕТИ</label>
+                <button type="button">-</button>
+                <input id="children" type="text" name="quantity" placeholder="0">
+                <button type="button">+</button>
+              </p>
+              <button type="submit">НАЙТИ</button>
+          </form>
           <img src="https://via.placeholder.com/150x100" alt="map">
     </section>
     </main>
     <footer>
-      <ul>
-        <li>
           <p><b>#VISITSEDONA</b></p>
           <a href="tel:+78005558628">+7 800 555-86-28</a>
-        </li>
+      <ul>
         <li>
           <a href="blank.html">
             <img src="https://via.placeholder.com/150x100" alt="twitter">
@@ -95,6 +113,10 @@
           </a>
         </li>
       </ul>
+      <img src="https://via.placeholder.com/150x100" alt="website.by">
+      <a href="https://htmlacademy.ru/intensive/htmlcss">
+        <img src="https://via.placeholder.com/150x100" alt="htmlacademy">
+      </a>
     </footer>
   </body>
 </html>
