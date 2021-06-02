@@ -7,7 +7,7 @@
   <body>
     <header>
       <nav>
-        <a href="blank.html"><img src="https://via.placeholder.com/150x100" alt="catalog"></a>          
+        <a href="index.html"><img src="https://via.placeholder.com/150x100" alt="catalog"></a>          
         <ul>
           <li><a href="blank.html">Информация</a></li>
           <li><a href="blank.html">Фото и видео</a></li>
@@ -18,10 +18,8 @@
     </header>
     <main>
         <form action="https://echo.htmlacademy.ru/courses" method="post">
+          <p>ИНФРАСТРУКТУРА:</p>  
             <ul>
-                <li>
-                    <h2>ИНФРАСТРУКТУРА:</h2>
-                </li>
                 <li>
                     <input type="checkbox" name="swimmingpool" id="swimmingpool-field" checked>
                     <label for="swimmingpool-field">БАССЕЙН</label>
@@ -35,12 +33,10 @@
                     <label for="wi-fi-field">WI-FI</label>
                 </li>
             </ul>
+            <p>ТИП ЖИЛЬЯ:</p>
             <ul>
                 <li>
-                    <h2>ТИП ЖИЛЬЯ:</h2>
-                </li>
-                <li>
-                    <input type="checkbox" name="hostel" id="hosltel-field" checked>
+                    <input type="checkbox" name="hostel" id="hostel-field" checked>
                     <label for="hostel-field">ГОСТИНИЦА</label>
                 </li>
                 <li>
@@ -52,32 +48,53 @@
                     <label for="apartments-field">АПАРТАМЕНТЫ</label>
                 </li>
             </ul>
-            <p>
-                <label for="cost">СТОИМОСТЬ В СУТКИ, ₽: </label>
-                <button type="button">ОТ 0</button>
-                <button type="button">ДО 3000</button>
-            </p>
+            <p>СТОИМОСТЬ В СУТКИ,₽:</p>
+              <div class="filter">
+              <div class="filter-range-wrapper">
+                <div class="filter-range">
+                  <div class="filter-range-scale">
+                    <div class="filter-range-bar"></div>
+                  </div>
+                  <button class="filter-range-handle min"></button>
+                  <button class="filter-range-handle max"></button>
+                </div>
+              </div>
+              <div class="filter-interval">
+                <label>От <input type="text" name="min-interval" value="0"></label>
+                <label>До <input type="text" name="max-interval" value="3000"></label>
+              </div>
+            </div>
             <button type="submit">ПОКАЗАТЬ</button>
         </form>
         <section>
-            <h2>НАЙДЕНО:3</h2>
+            <p>НАЙДЕНО:3</p>
             <p>СОРТИРОВКА</p>
-            <p>ПО ЦЕНЕ</p>
-            <p>ПО ТИПУ</p>
-            <p>ПО РЕЙТИНГУ</p>
-            <button type="button">
-                <img src="https://via.placeholder.com/150x100" alt="more"> 
-            </button> 
-            <button type="button">
-                <img src="https://via.placeholder.com/150x100" alt="less"> 
-            </button> 
+            <ul>
+                <li>
+                  <a href="blank.html">ПО ЦЕНЕ</a>
+                </li>
+                <li>
+                  <a href="blank.html">ПО ТИПУ</a>
+                </li>
+                <li>
+                  <a href="blank.html">ПО РЕЙТИНГУ</a>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <a href="blank.html">&gt;</a>
+                </li>
+                <li>
+                  <a href="blank.html">&lt;</a>
+                </li>
+              </ul>
             <ul>
                 <li>
                   <h3>AMARA RESORT & SPA</h3>
                   <p>ГОСТИНИЦА</p>
                   <p>ОТ 4000 ₽</p>
-                  <button type="button"><a href="blank.html">ПОДРОБНЕЕ</a></button>
-                  <button type="button"><a href="blank.html">ЗАБРОНИРОВАТЬ</a></button>
+                  <a href="blank.html">ПОДРОБНЕЕ</a>
+                  <a href="blank.html">ЗАБРОНИРОВАТЬ</a>
                   <img src="https://via.placeholder.com/150x100" alt="amara-resort-&-spa"> 
                   <img src="https://via.placeholder.com/150x100" alt="4-stars"> 
                   <p>РЕЙТИНГ:8.5</p>  
@@ -125,7 +142,7 @@
           </a>
         </li>
       </ul>
-      <img src="https://via.placeholder.com/150x100" alt="website.by">
+      <p>website.by"</p>
       <a href="https://htmlacademy.ru/intensive/htmlcss">
         <img src="https://via.placeholder.com/150x100" alt="htmlacademy">
       </a>
