@@ -1,0 +1,182 @@
+:root {
+    --basic-black: #000000;
+    --basic-white: #ffffff;
+    --basic-blue: #23A9E1;
+    --basic-grey: #333333;
+    --basic-brown: #766357;
+    --basic-blue1: #81B3D2;  
+    --basic-white1: #F2F2F2;
+    --basic-grey2: #A9A9A9;
+    --basic-blue2: #81B3D2;
+    --basic-white2: #eeeeee;
+}
+
+.page-body {
+  min-width: 960px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700px;
+  color: var(--basic-black);
+  text-transform: uppercase;
+  background-color: var(--basic-white2);
+  background-image: url("img/background.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.main-header {
+  background-color: #ffffff;
+}
+.main-navigation {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  color:var(--basic-black);
+  background-color: transparent;
+}
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation-current a:not([href]) {
+  background-color: var(--basic-white)
+}
+.site-navigation a{
+  color: var(--basic-black);
+}
+.site-navigation a:hover,
+.site-navigation a:focus {
+  background-color: var(--basic-white);
+}
+.features-list {
+list-style: none;
+}
+.features-list h3{
+  font-size: 21px;
+  line-height: 21px;
+
+}
+
+.features-item {
+  text-align: center;
+  list-style: none;
+}
+.features-item h4 {
+  font-size: 21px;
+  line-height: 21px;
+}
+.features-item p {
+  font-size: 14px;
+  line-height: 21px;
+}
+.container h2{
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.interested {
+  font-size: 30px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.date {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.button-find {
+  font: inherit;
+  text-align: center;
+  color:#ffffff;
+  font-weight: bold;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color:#766357;
+  border: none;
+}
+.button-find:hover,
+.button-find:focus,
+.button-find:active {
+  background-color: #766357;
+}
+.button-find:disabled {
+  cursor: default;
+  opacity: 0.5;
+  background-color: #766357;
+}
+.contact {
+  color: inherit;
+}
+.input-date,
+.input-number {
+ font: inherit;
+ background-color:#F2F2F2; 
+ border:none
+}
+.footer {
+  color: #000000; ;
+  background-color: #ffffff;
+}
+.social {
+    text-align: center;
+    list-style: none;
+}
+.find-button {
+  font: inherit;
+  text-align: center;
+  color:#ffffff;
+  font-weight: bold;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: #81b3d2;
+  border: none;
+}
+.city {
+  background-color:#81B3D2 ;
+  color: #ffffff;
+}
+.city h3 {
+  color: #ffffff;
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.city p {
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 21px;
+}
+.main-header-logo {
+  position: center;
+}
+.devil {
+  background-color:#81B3D2 ;
+  color: #ffffff;
+}
+.devil h3 {
+  color: #ffffff;
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.devil p {
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 21px;
+}
+.advantages {
+  font-size: 14px;
+  line-height: 26px;
+  position: center;
+}
