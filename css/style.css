@@ -18,13 +18,10 @@
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 21px;
   line-height: 26px;
-  font-weight: 700px;
+  font-weight: 400;
   color: var(--basic-black);
   text-transform: uppercase;
   background-color: var(--basic-white2);
-  background-image: url("img/background.jpg");
-  background-position: top center;
-  background-repeat: no-repeat;
 }
 a {
   text-decoration: none;
@@ -34,7 +31,7 @@ img {
   height: auto;
 }
 .main-header {
-  background-color: #ffffff;
+  background-color: var(--basic-white);
 }
 .main-navigation {
   font-size: 14px;
@@ -98,22 +95,22 @@ list-style: none;
 .button-find {
   font: inherit;
   text-align: center;
-  color:#ffffff;
+  color:var(--basic-white);
   font-weight: bold;
   vertical-align: middle;
   text-transform: uppercase;
-  background-color:#766357;
+  background-color: var(--basic-brown);
   border: none;
 }
 .button-find:hover,
 .button-find:focus,
 .button-find:active {
-  background-color: #766357;
+  background-color: var(--basic-brown);
 }
 .button-find:disabled {
   cursor: default;
   opacity: 0.5;
-  background-color: #766357;
+  background-color: var(--basic-brown);
 }
 .contact {
   color: inherit;
@@ -121,12 +118,12 @@ list-style: none;
 .input-date,
 .input-number {
  font: inherit;
- background-color:#F2F2F2; 
+ background-color:var(--basic-white2); 
  border:none
 }
 .footer {
-  color: #000000; ;
-  background-color: #ffffff;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
 }
 .social {
     text-align: center;
@@ -135,48 +132,38 @@ list-style: none;
 .find-button {
   font: inherit;
   text-align: center;
-  color:#ffffff;
+  color: var(--basic-white);
   font-weight: bold;
   vertical-align: middle;
   text-transform: uppercase;
-  background-color: #81b3d2;
+  background-color: var(--basic-blue2);
   border: none;
 }
-.city {
-  background-color:#81B3D2 ;
-  color: #ffffff;
+.block-text {
+  background-color: var(--basic-blue2) ;
+  color: var(--basic-white);
 }
-.city h3 {
-  color: #ffffff;
+.block-text h3 {
+  color: var(--basic-white);
   font-size: 21px;
   line-height: 21px;
 }
 
-.city p {
-  color: #ffffff;
-  font-size: 24px;
-  line-height: 21px;
-}
-.main-header-logo {
-  position: center;
-}
-.devil {
-  background-color:#81B3D2 ;
-  color: #ffffff;
-}
-.devil h3 {
-  color: #ffffff;
-  font-size: 21px;
+.block-text p {
+  color: var(--basic-white);
+  font-size: 14px;
   line-height: 21px;
 }
 
-.devil p {
-  color: #ffffff;
-  font-size: 24px;
-  line-height: 21px;
-}
 .advantages {
   font-size: 14px;
   line-height: 26px;
   position: center;
+}
+.logo {
+  background-image: url("../img/background.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin: auto;
 }
