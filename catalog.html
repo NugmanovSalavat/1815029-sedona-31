@@ -4,8 +4,13 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="icon" href="favicon.ico">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">     
+    <link href="css/style.css" rel="stylesheet">
   </head>
-  <body class="body">
+  <body class="page-body">
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo" href="index.html"><img src="img/logo.svg" width="138" height="70" alt="логотип"></a>          
@@ -18,6 +23,7 @@
       </nav>
     </header>
     <main>
+      <div class="catalog">
         <form action="https://echo.htmlacademy.ru/courses" method="post">
           <p>Инфраструктура:</p>  
             <ul>
@@ -61,27 +67,28 @@
                 </div>
               </div>
               <div class="filter-interval">
-                <label>От <input type="text" name="min-interval" value="0"></label>
+                <label>От <input  type="text" name="min-interval" value="0"></label>
                 <label>До <input type="text" name="max-interval" value="3000"></label>
               </div>
             </div>
-            <button type="submit">ПОКАЗАТЬ</button>
+            <button class="submit-other" type="submit">ПОКАЗАТЬ</button>
         </form>
-        <section>
-            <p>Найдено:3</p>
-            <p>Сортировка</p>
-            <ul>
+      </div>
+        <section class="sort">
+            <p class="sort-found">Найдено:3</p>
+            <p class="sort-categories">Сортировка</p>
+            <ul class="find-by">
                 <li>
-                  <a href="blank.html">По цене</a>
+                  <a class="sort-blue" href="blank.html">По цене</a>
                 </li>
                 <li>
-                  <a href="blank.html">По типу</a>
+                  <a class="sort-other" href="blank.html">По типу</a>
                 </li>
                 <li>
-                  <a href="blank.html">По рейтингу</a>
+                  <a class="sort-other" href="blank.html">По рейтингу</a>
                 </li>
               </ul>
-              <ul>
+              <ul class="more-or-less">
                 <li>
                   <a href="blank.html">&gt;</a>
                 </li>
@@ -89,62 +96,62 @@
                   <a href="blank.html">&lt;</a>
                 </li>
               </ul>
-            <ul>
+            <ul class="variants">
                 <li>
                   <h3>Amara resort & spa</h3>
                   <p>Гостиница</p>
                   <p>От 4000 ₽</p>
-                  <a href="blank.html">Подробнее</a>
-                  <a href="blank.html">Забронировать</a>
+                  <a class="more-info" href="blank.html">Подробнее</a>
+                  <a class="to-book" href="blank.html">Забронировать</a>
                   <img src="img/amara.jpg" width="135" height="90" alt="amara resort & spa"> 
                   <img src="img/4_stars.svg" width="91" height="17" alt="4 stars"> 
-                  <p>Рейтинг:8.5</p>  
+                  <p class="raiting" >Рейтинг:8.5</p>  
                 </li>  
                 <li>
                     <h3>Desert quail inn</h3>
                     <p>Мотель</p>
                     <p>От 3000 ₽</p>
-                    <a href="blank.html">Подробнее</a>
-                    <a href="blank.html">Забронировать</a>
+                    <a class="more-info" href="blank.html">Подробнее</a>
+                    <a class="to-book" href="blank.html">Забронировать</a>
                     <img src="img/desert.jpg" width="135" height="90" alt="desert quail inn"> 
                     <img src="img/3_stars.svg" width="66" height="17" alt="3 stars"> 
-                    <p>Рейтинг:8.9</p>  
+                    <p class="raiting">Рейтинг:8.9</p>  
                 </li>  
                 <li>
                     <h3>Villas at poco diablo</h3>
                     <p>Апартаменты</p>
                     <p>ОТ 2000 ₽</p>
-                    <a href="blank.html">Подробнее</a>
-                    <a href="blank.html">Забронировать</a>
+                    <a class="more-info" href="blank.html">Подробнее</a>
+                    <a class="to-book" href="blank.html">Забронировать</a>
                     <img src="img/villas.jpg" width="135" height="90" alt="villas at poco diablo"> 
                     <img src="img/2_stars.svg" width="42" height="17" alt="2 stars"> 
-                    <p>Рейтинг:9.2</p>  
+                    <p class="raiting">Рейтинг:9.2</p>  
                 </li>  
             </ul>
         </section>
     </main>
-    <footer>
+    <footer class="footer">
       <p><b>#VISITSEDONA</b></p>
-      <a href="tel:+78005558628">+7 800 555-86-28</a>
-  <ul>
+      <a class="contact" href="tel:+78005558628">+7 800 555-86-28</a>
+  <ul class="social">
     <li>
-      <a href="blank.html">
+      <a class="social-button" href="blank.html">
         <img src="img/twitter.svg" width="46" height="48" alt="twitter">
       </a>
     </li>
     <li>
-      <a href="blank.html">
+      <a class="social-button" href="blank.html">
         <img src="img/facebook.svg" width="46" height="48" alt="facebook">
       </a>
     </li>
     <li>
-      <a href="blank.html">
+      <a class="social-button" href="blank.html">
         <img src="img/youtube.svg" width="46" height="48" alt="youtube">
       </a>
     </li>
   </ul>
   <p>website.by</p>
-  <a href="https://htmlacademy.ru/intensive/htmlcss">
+  <a class="button-site" href="https://htmlacademy.ru/intensive/htmlcss">
     <img src="img/logo_htmlacademy.svg" width="115" height="33" alt="htmlacademy">
   </a>
 </footer>

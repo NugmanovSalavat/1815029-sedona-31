@@ -9,7 +9,9 @@
     --basic-grey2: #A9A9A9;
     --basic-blue2: #81B3D2;
     --basic-white2: #EEEEEE;
-}
+    --basic-grey3: #CACACA;
+    --basic-grey4: #666666;
+  }
 
 .page-body {
   min-width: 960px;
@@ -165,4 +167,117 @@ list-style: none;
   background-repeat: no-repeat;
   background-size: 100%;
   margin: auto;
+}
+.catalog {
+  background-image: url("../img/inner-background.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin: auto;
+  list-style: none;
+}
+
+.catalog p {
+    color: var(--basic-white);
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.catalog label {
+  color: var(--basic-white);
+  font-size: 14px;
+  line-height: 21px;
+}
+.catalog li {
+  list-style: none;
+}
+
+.felter-interval {
+  color: var(--basic-white);
+  text-align: center;
+}
+
+.submit-other {
+  text-align: center;
+  color: var(--basic-white);
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.sort-found {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.sort-categories {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.sort-blue {
+  color: var(--basic-blue1);
+  font-size: 12px;
+  line-height: 18px;
+}
+.find-by li{
+  font-size: 12px;
+  line-height: 18px;
+  list-style: none;
+}
+.sort-other{
+  list-style: none;
+  color: var(--basic-grey3);
+}
+
+.more-or-less {
+  list-style: none;
+}
+
+.variants h3 {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.variants p {
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--basic-grey);
+}
+.variants li {
+  list-style: none;
+}
+
+.more-info {
+font: inherit;
+text-align: center;
+color: var(--basic-white);
+font-weight: bold;
+text-transform: uppercase;
+background-color: var(--basic-blue2);
+border: none;
+font-size: 14px;
+line-height: 21px;
+}
+.to-book {
+font: inherit;
+text-align: center;
+color: var(--basic-white);
+font-weight: bold;
+text-transform: uppercase;
+background-color: var(--basic-brown);
+border: none;
+font-size: 14px;
+line-height: 21px;
+}
+
+.raiting {
+font-size: 14px;
+line-height: 21px;
+color: var(--basic-grey4);
+font: inherit;
+text-align: center;
+font-weight: bold;
+text-transform: uppercase;
+background-color: var(--basic-white1);
+border: none;
 }
