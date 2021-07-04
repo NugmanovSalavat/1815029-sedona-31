@@ -128,8 +128,8 @@ list-style: none;
   background-color: var(--basic-white);
 }
 .social {
-    text-align: center;
-    list-style: none;
+  text-align: center;
+  list-style: none;
 }
 .find-button {
   font: inherit;
@@ -178,9 +178,9 @@ list-style: none;
 }
 
 .catalog p {
-    color: var(--basic-white);
-    font-size: 16px;
-    line-height: 21px;
+  color: var(--basic-white);
+  font-size: 16px;
+  line-height: 21px;
 }
 
 .catalog label {
@@ -192,7 +192,7 @@ list-style: none;
   list-style: none;
 }
 
-.felter-interval {
+.filter-interval {
   color: var(--basic-white);
   text-align: center;
 }
@@ -214,7 +214,7 @@ list-style: none;
   line-height: 18px;
 }
 
-.sort-blue {
+.sort-current {
   color: var(--basic-blue1);
   font-size: 12px;
   line-height: 18px;
@@ -229,7 +229,7 @@ list-style: none;
   color: var(--basic-grey3);
 }
 
-.more-or-less {
+.sort-direction {
   list-style: none;
 }
 
@@ -248,36 +248,36 @@ list-style: none;
 }
 
 .more-info {
-font: inherit;
-text-align: center;
-color: var(--basic-white);
-font-weight: bold;
-text-transform: uppercase;
-background-color: var(--basic-blue2);
-border: none;
-font-size: 14px;
-line-height: 21px;
+  font: inherit;
+  text-align: center;
+  color: var(--basic-white);
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: var(--basic-blue2);
+  border: none;
+  font-size: 14px;
+  line-height: 21px;
 }
 .to-book {
-font: inherit;
-text-align: center;
-color: var(--basic-white);
-font-weight: bold;
-text-transform: uppercase;
-background-color: var(--basic-brown);
-border: none;
-font-size: 14px;
-line-height: 21px;
+  font: inherit;
+  text-align: center;
+  color: var(--basic-white);
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: var(--basic-brown);
+  border: none;
+  font-size: 14px;
+  line-height: 21px;
 }
 
 .raiting {
-font-size: 14px;
-line-height: 21px;
-color: var(--basic-grey4);
-font: inherit;
-text-align: center;
-font-weight: bold;
-text-transform: uppercase;
-background-color: var(--basic-white1);
-border: none;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--basic-grey4);
+  font: inherit;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: var(--basic-white1);
+  border: none;
 }
