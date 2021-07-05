@@ -24,7 +24,12 @@
   color: var(--basic-black);
   text-transform: uppercase;
   background-color: var(--basic-white2);
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: max-content, 1fr min-content;
+  align-content: start;
 }
+
 a {
   text-decoration: none;
 }
@@ -35,7 +40,11 @@ img {
 .main-header {
   background-color: var(--basic-white);
 }
+.main-header-logo {
+  justify-self: center;
+}
 .main-navigation {
+  display: grid;
   font-size: 14px;
   line-height: 26px;
   font-weight: bold;
@@ -44,8 +53,18 @@ img {
 }
 .site-navigation {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
+.main-navigation-wrapper {
+  display: grid;
+  grid-template-columns: 1fr min-content;
+  background-color:var(--basic-white);
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
 .site-navigation-current a:not([href]) {
   background-color: var(--basic-white)
 }
@@ -57,12 +76,23 @@ img {
   background-color: var(--basic-white);
 }
 .features-list {
-list-style: none;
+  list-style: none;
 }
 .features-list h3{
   font-size: 21px;
   line-height: 21px;
-
+}
+.stuff {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.about-city {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.about-city2 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
 }
 
 .features-item {
@@ -77,21 +107,34 @@ list-style: none;
   font-size: 14px;
   line-height: 21px;
 }
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
 .container h2{
   font-size: 21px;
   line-height: 26px;
   text-align: center;
 }
-
+.welcome {
+  display: grid;
+  justify-content: center;
+  background-color: var(--basic-white);
+}
 .interested {
   font-size: 30px;
   line-height: 24px;
   font-weight: bold;
+  justify-self: center;
 }
 
 .date {
   font-size: 14px;
   line-height: 24px;
+  justify-self: center;
+
 }
 
 .button-find {
@@ -103,6 +146,10 @@ list-style: none;
   text-transform: uppercase;
   background-color: var(--basic-brown);
   border: none;
+  width: 568px;
+  height: 86px;
+  justify-self: center;
+
 }
 .button-find:hover,
 .button-find:focus,
@@ -126,10 +173,18 @@ list-style: none;
 .footer {
   color: var(--basic-black);
   background-color: var(--basic-white);
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 .social {
   text-align: center;
   list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
 }
 .find-button {
   font: inherit;
@@ -139,34 +194,70 @@ list-style: none;
   text-transform: uppercase;
   background-color: var(--basic-blue2);
   border: none;
+  width: 458px;
+  height: 58px;
+  justify-self: center;
+
 }
 .block-text {
   background-color: var(--basic-blue2) ;
   color: var(--basic-white);
+  display: grid;
 }
 .block-text h3 {
   color: var(--basic-white);
   font-size: 21px;
   line-height: 21px;
+  justify-self: center;
 }
 
 .block-text p {
   color: var(--basic-white);
   font-size: 14px;
   line-height: 21px;
+  justify-self: center;
+
+}
+.block-text2 {
+  background-color: var(--basic-blue2) ;
+  color: var(--basic-white);
+  display: grid;
+  justify-content: center;
+  order: 1;
+}
+.block-text2 h3 {
+  color: var(--basic-white);
+  font-size: 21px;
+  line-height: 21px;
+  justify-self: center;
+
+}
+
+.block-text2 p {
+  color: var(--basic-white);
+  font-size: 14px;
+  line-height: 21px;
+  justify-self: center;
+
 }
 
 .advantages {
   font-size: 14px;
   line-height: 26px;
   position: center;
+  justify-self: center;
 }
 .logo {
   background-image: url("../img/background.jpg");
   background-position: top center;
   background-repeat: no-repeat;
-  background-size: 100%;
-  margin: auto;
+  background-size: auto;
+  margin-top: 76px;
+  padding-left: 371px;
+  padding-right: 371px;
+  padding-top: 77px;
+  padding-bottom: 81px;
+  justify-self: center;
 }
 .catalog {
   background-image: url("../img/inner-background.jpg");
@@ -280,4 +371,27 @@ list-style: none;
   text-transform: uppercase;
   background-color: var(--basic-white1);
   border: none;
+}
+
+.page {
+  height: 100%;
+}
+
+.form-to-book {
+  display: grid;
+  background-color: var(--basic-white);
+  justify-content: center;
+}
+.main-form {
+  display: grid;
+  justify-content: center;
+}
+
+.visit-us {
+  justify-self: center;
+}
+.site-by-html {
+  justify-self: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }

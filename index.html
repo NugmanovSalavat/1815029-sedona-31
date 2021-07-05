@@ -14,31 +14,37 @@
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo" href="index.html"><img src="img/logo.svg" width="138" height="70" alt="логотип"></a>          
-        <ul class="site-navigation">
-          <li><a href="blank.html">Информация</a></li>
-          <li><a href="blank.html">Фото и видео</a></li>
-          <li><a href="blank.html">Карта штата</a></li>
-          <li><a href="catalog.html">Гостиницы</a></li>
-        </ul>
+        <div class="main-navigation-wrapper">
+          <ul class="site-navigation">
+            <li><a href="blank.html">Информация</a></li>
+            <li><a href="blank.html">Фото и видео</a></li>
+            <li><a href="blank.html">Карта штата</a></li>
+            <li><a href="catalog.html">Гостиницы</a></li>
+          </ul>
+        </div>
       </nav>
     </header>
-    <main>
-      <div class="logo">
-      <img src="img/welcome.svg" width="457" height="351" alt="SEDONA">
+    <main class="container">
+      <div class="welcome">
+        <div class="logo">
+          <img src="img/welcome.svg" width="457" height="351" alt="SEDONA">
+        </div>
+        <h2>Седона — небольшой городок в Аризоне, заслуживающий большего! </h2>
+        <p class="advantages">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       </div>
-      <h2>Седона — небольшой городок в Аризоне, заслуживающий большего! </h2>
-      <p class="advantages">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-          <ul class="features-list">
+      <ul class="features-list">
             <li>
-              <div class="block-text">
-              <h3>Настоящий городок</h3>
-              <p>-№1-</p>
-              <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+              <div class="about-city">
+                <div class="block-text">
+                  <h3>Настоящий городок</h3>
+                  <p>-№1-</p>
+                  <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+                </div>
+                <div class="block-pic">
+                <img src="img/background_1.jpg" width="800" height="256" alt="маленький городок">         
+                </div>
               </div>
-              <div class="block-pic">
-              <img src="img/background_1.jpg" width="800" height="256" alt="маленький городок">         
-              </div>
-              <ul>
+              <ul class="stuff">
                       <li class="features-item">
                         <h4>Жильё</h4>
                         <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
@@ -54,36 +60,42 @@
                 </ul>
             </li>    
             <li>
-              <div class="block-text">
-              <h3>Там есть Мост дьявола</h3>
-              <p>-№2-</p>
-              <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+              <div class="about-city2">
+                <div class="block-text2">
+                  <h3>Там есть Мост дьявола</h3>
+                  <p>-№2-</p>
+                  <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+                </div>
+                <div class="block-pic">
+                  <img src="img/background_2.jpg" width="800" height="256" alt="живописный каньон">
+                </div>
               </div>
-              <div class="block-pic">
-              <img src="img/background_2.jpg" width="800" height="256" alt="живописный каньон">
-              </div>
             </li>
-            <li class="features-item">
-              <h4>Небольшая площадь</h4>
-              <p>-№3-</p>
-              <p>Жильё  Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-            </li>
-            <li class="features-item">
-              <h4>Красивая дорога</h4>
-              <p>-№4-</p>
-              <p>Ехать в седону из лас-вегаса совсем не скучно!</p>
-            </li>
-            <li class="features-item">
-              <h4>Мало туристов</h4>
-              <p>-№5-</p>
-              <p>Большинство едет в гранд каньон и толпится там</p>
-            </li>
+            <div class="stuff">
+              <li class="features-item">
+                <h4>Небольшая площадь</h4>
+                <p>-№3-</p>
+                <p>Жильё  Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+              </li>
+              <li class="features-item">
+                <h4>Красивая дорога</h4>
+                <p>-№4-</p>
+                <p>Ехать в седону из лас-вегаса совсем не скучно!</p>
+              </li>
+              <li class="features-item">
+                <h4>Мало туристов</h4>
+                <p>-№5-</p>
+                <p>Большинство едет в гранд каньон и толпится там</p>
+              </li>
+            </div>
           </ul>
     <section class="travel">
+          <div class="form-to-book">
           <p class="interested">Заинтересовались?</p>
           <p class="date">Укажите предполагаемые даты поездки,  и мы покажем вам лучшие предложения гостиниц в седоне</p>
           <button class="button-find" type="button">Поиск гостиницы в Седоне</button>
-          <form action="https://echo.htmlacademy.ru/courses" method="post">
+          </div>
+          <form class="main-form" action="https://echo.htmlacademy.ru/courses" method="post">
               <p>
                 <label for="check-in-date">Дата заезда</label>
                 <input class="input-date" id="check-in-date" type="text" name="date" placeholder="24 АПРЕЛЯ 2017">
@@ -112,29 +124,35 @@
     </section>
     </main>
     <footer class="footer">
-          <p><b>#VISITSEDONA</b></p>
+      <div class="visit-us">    
+        <p><b>#VISITSEDONA</b></p>
           <a class="contact" href="tel:+78005558628">+7 800 555-86-28</a>
-      <ul class="social">
-        <li>
-          <a class="social-button" href="blank.html">
-            <img src="img/twitter.svg" width="46" height="48" alt="twitter">
-          </a>
-        </li>
-        <li>
-          <a class="social-button" href="blank.html">
-            <img src="img/facebook.svg" width="46" height="48" alt="facebook">
-          </a>
-        </li>
-        <li>
-          <a class="social-button" href="blank.html">
-            <img src="img/youtube.svg" width="46" height="48" alt="youtube">
-          </a>
-        </li>
-      </ul>
-      <p>website.by</p>
-      <a class="button-site" href="https://htmlacademy.ru/intensive/htmlcss">
-        <img src="img/logo_htmlacademy.svg" width="115" height="33" alt="htmlacademy">
-      </a>
+      </div>
+      <div>
+          <ul class="social">
+            <li>
+              <a class="social-button" href="blank.html">
+                <img src="img/twitter.svg" width="46" height="48" alt="twitter">
+              </a>
+            </li>
+            <li>
+              <a class="social-button" href="blank.html">
+                <img src="img/facebook.svg" width="46" height="48" alt="facebook">
+              </a>
+            </li>
+            <li>
+              <a class="social-button" href="blank.html">
+                <img src="img/youtube.svg" width="46" height="48" alt="youtube">
+              </a>
+            </li>
+          </ul>
+      </div>
+      <div class="site-by-html">
+        <p>website.by</p>
+        <a class="button-site" href="https://htmlacademy.ru/intensive/htmlcss">
+          <img src="img/logo_htmlacademy.svg" width="115" height="33" alt="htmlacademy">
+        </a>
+      </div>
     </footer>
   </body>
 </html>
