@@ -11,6 +11,7 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page-body">
+    <div class="container">
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo" href="index.html"><img src="img/logo.svg" width="138" height="70" alt="логотип"></a>          
@@ -23,9 +24,10 @@
       </nav>
     </header>
     <main>
-      <div class="catalog">
-        <form action="https://echo.htmlacademy.ru/courses" method="post">
-          <p>Инфраструктура:</p>  
+      <div>
+        <form class="catalog" action="https://echo.htmlacademy.ru/courses" method="post">
+          <div class="infrastructure">
+            <p>Инфраструктура:</p>  
             <ul>
                 <li>
                     <input type="checkbox" name="swimmingpool" id="swimmingpool-field" checked>
@@ -40,6 +42,8 @@
                     <label for="wi-fi-field">Wi-Fi</label>
                 </li>
             </ul>
+          </div>
+          <div class="type-of-house">
             <p>Тип жилья:</p>
             <ul>
                 <li>
@@ -55,6 +59,8 @@
                     <label for="apartments-field">Апартаменты</label>
                 </li>
             </ul>
+          </div>
+          <div class="cost">
             <p>Стоимость в сутки,₽:</p>
               <div class="filter">
               <div class="filter-range-wrapper">
@@ -72,7 +78,8 @@
               </div>
             </div>
             <button class="submit-other" type="submit">ПОКАЗАТЬ</button>
-        </form>
+          </div>
+          </form>
       </div>
         <section class="sort">
             <p class="sort-found">Найдено:3</p>
@@ -97,63 +104,82 @@
                 </li>
               </ul>
             <ul class="variants">
-                <li>
-                  <h3>Amara resort & spa</h3>
-                  <p>Гостиница</p>
-                  <p>От 4000 ₽</p>
-                  <a class="more-info" href="blank.html">Подробнее</a>
-                  <a class="to-book" href="blank.html">Забронировать</a>
+                <li class="hotel">
                   <img src="img/amara.jpg" width="135" height="90" alt="amara resort & spa"> 
-                  <img src="img/4_stars.svg" width="91" height="17" alt="4 stars"> 
-                  <p class="raiting" >Рейтинг:8.5</p>  
+                  <div>
+                    <h3>Amara resort & spa</h3>
+                    <p>Гостиница</p>
+                    <p>От 4000 ₽</p>
+                    <a class="more-info" href="blank.html">Подробнее</a>
+                    <a class="to-book" href="blank.html">Забронировать</a>
+                  </div>
+                  <div class="about-raiting">
+                    <img src="img/4_stars.svg" width="91" height="17" alt="4 stars"> 
+                    <p class="raiting" >Рейтинг:8.5</p>  
+                  </div>
                 </li>  
-                <li>
+                <li class="hotel">
+                  <img src="img/desert.jpg" width="135" height="90" alt="desert quail inn"> 
+                  <div>
                     <h3>Desert quail inn</h3>
                     <p>Мотель</p>
                     <p>От 3000 ₽</p>
                     <a class="more-info" href="blank.html">Подробнее</a>
                     <a class="to-book" href="blank.html">Забронировать</a>
-                    <img src="img/desert.jpg" width="135" height="90" alt="desert quail inn"> 
+                  </div>
+                  <div class="about-raiting">
                     <img src="img/3_stars.svg" width="66" height="17" alt="3 stars"> 
                     <p class="raiting">Рейтинг:8.9</p>  
+                  </div>
                 </li>  
-                <li>
+                <li class="hotel">
+                  <img src="img/villas.jpg" width="135" height="90" alt="villas at poco diablo"> 
+                  <div>
                     <h3>Villas at poco diablo</h3>
                     <p>Апартаменты</p>
                     <p>ОТ 2000 ₽</p>
                     <a class="more-info" href="blank.html">Подробнее</a>
                     <a class="to-book" href="blank.html">Забронировать</a>
-                    <img src="img/villas.jpg" width="135" height="90" alt="villas at poco diablo"> 
+                  </div>
+                  <div class="about-raiting">
                     <img src="img/2_stars.svg" width="42" height="17" alt="2 stars"> 
                     <p class="raiting">Рейтинг:9.2</p>  
+                  </div>
                 </li>  
             </ul>
         </section>
     </main>
     <footer class="footer">
-      <p><b>#VISITSEDONA</b></p>
-      <a class="contact" href="tel:+78005558628">+7 800 555-86-28</a>
-  <ul class="social">
-    <li>
-      <a class="social-button" href="blank.html">
-        <img src="img/twitter.svg" width="46" height="48" alt="twitter">
-      </a>
-    </li>
-    <li>
-      <a class="social-button" href="blank.html">
-        <img src="img/facebook.svg" width="46" height="48" alt="facebook">
-      </a>
-    </li>
-    <li>
-      <a class="social-button" href="blank.html">
-        <img src="img/youtube.svg" width="46" height="48" alt="youtube">
-      </a>
-    </li>
-  </ul>
-  <p>website.by</p>
-  <a class="button-site" href="https://htmlacademy.ru/intensive/htmlcss">
-    <img src="img/logo_htmlacademy.svg" width="115" height="33" alt="htmlacademy">
-  </a>
-</footer>
-</body>
+      <div class="visit-us">
+        <p><b>#VISITSEDONA</b></p>
+          <a class="contact" href="tel:+78005558628">+7 800 555-86-28</a>
+      </div>
+      <div>
+          <ul class="social">
+            <li>
+              <a class="social-button" href="blank.html">
+                <img src="img/twitter.svg" width="46" height="48" alt="twitter">
+              </a>
+            </li>
+            <li>
+              <a class="social-button" href="blank.html">
+                <img src="img/facebook.svg" width="46" height="48" alt="facebook">
+              </a>
+            </li>
+            <li>
+              <a class="social-button" href="blank.html">
+                <img src="img/youtube.svg" width="46" height="48" alt="youtube">
+              </a>
+            </li>
+          </ul>
+      </div>
+      <div class="site-by-html">
+        <p>website.by</p>
+        <a class="button-site" href="https://htmlacademy.ru/intensive/htmlcss">
+          <img src="img/logo_htmlacademy.svg" width="115" height="33" alt="htmlacademy">
+        </a>
+      </div>
+    </footer>
+    </div>
+  </body>
 </html>
